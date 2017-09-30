@@ -47,7 +47,7 @@ $result = $result.$str_rand;
 if($str_rand == true)
 {$lengeth++;}flush();
 }return $result;}
-$data_ad = 'data/dataglass.php';
+$data_ad = 'dataglass.php';
 $data_gt = file_get_contents($data_ad);
 $data = json_decode($data_gt,true);
 $blocks = 'data/blocks.txt';
