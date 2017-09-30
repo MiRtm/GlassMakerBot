@@ -1,7 +1,7 @@
 <?php
 error_reporting(true);
 flush();
-$modir = '306904366';
+$modir = '306904366';   // ایدی عددی خود را تغییر دهید
 $update = json_decode(file_get_contents('php://input'));
 $msg = $update->message;
 $clbk = $update->callback_query;
@@ -12,7 +12,7 @@ $edps = $update->edit_channel_post;
 $rply = $msg->reply_to_message;
 flush();
 function send($method,$datas=[]){
-$url = "https://api.telegram.org/bot396660610:AAElye4QCQ8zHOPxRIBlKo1EAhgmt_wtPgo/".$method;
+$url = "https://api.telegram.org/bot0/".$method;   // توکن خود را بجای صفر قرار دهید
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL,$url);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
